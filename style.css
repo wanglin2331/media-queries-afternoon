@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    margin:0;
+}
+
+.topbanner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.topbanner h1 {
+    color: #FBC303
+}
+
+nav{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+  }
+
+.menu {
+    color: white;
+    height: 40px;
+    width: 80px; 
+}
+
+header {
+    border: 5px solid black;
+    height: 800px;
+    background: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+header button {
+    background-color: #FBC303;
+}
+
+.welcome{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    margin: 0px;
+    font-size: 40px;
+}
+
+.welcome h2 {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.welcome button {
+    margin-top: 20px;
+    font-size: 20px;
+    height: 10%;
+    width: 20%;
+}
+
+
+
+.service .fas {
+    font-size: 200px;
+}
+
+
+@media(min-width: 992px){
+    .menu {
+        display: none;
+    }
+
+    nav{
+        display: flex;
+    }
+
+    .welcome h1 {
+        margin: 0px;
+        font-size: 80px;
+    }
+    
+    .welcome h2 {
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+
+    .service {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px 100px;
+    }
+
+    .serviceItem {
+        width: 60%;
+    }
+}
+
+@media(min-width: 600px){
+    .serviceItem {
+        width: 20%;
+    }
+}
